@@ -1,31 +1,57 @@
-source 'http://rubygems.org'
+env = ENV["RAILS_ENV"] || 'development'
+dbfile = File.expand_path("../config/database.yml", __FILE__)
 
-gem 'rails', '3.0.4'
+unless File.exists?(dbfile)
+  puts "You need to configure config/database.yml first"
+  puts "Exiting"
+  exit
+else
+  conf = YAML.load(File.read(dbfile))
+  adapter = conf[env]['adapter']
+  raise "You need define an adapter in your database.yml" if adapter == '' || adapter.nil?
+  case adapter
+  when 'sqlite3'
+    gem 'sqlite3-ruby'
+  when 'postgresql'
+    gem 'pg'
+  when 'mysql'
+    if RUBY_VERSION.include?('1.9')
+      gem 'sam-mysql-ruby'
+    else
+      gem 'mysql'
+    end
+  else
+    raise "Don't know what gem to use for adapter #{adapter}"
+  end
+end
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
+require 'fileutils'
+require 'yaml'
 
-gem 'sqlite3'
+source :gemcutter
+gem 'rails', '3.0.0'
+gem 'htmlentities'
+gem 'json'
+gem 'bluecloth', '~> 2.0.5'
+gem 'coderay', '~> 0.9'
+gem 'will_paginate', '~> 3.0.pre2'
+gem 'RedCloth', '~> 4.2.2'
+gem 'addressable', '~> 2.1.0', :require => 'addressable/uri'
+gem 'mini_magick', '~> 1.3', :require => 'mini_magick'
+gem 'uuidtools', '~>2.1.1'
+gem 'flickraw', '~> 0.8.3'
+gem 'rubypants', '~> 0.2.0'
+gem 'acts_as_list'
+gem 'acts_as_tree_rails3'
 
-# Use unicorn as the web server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
-# gem 'ruby-debug'
-# gem 'ruby-debug19'
-
-# Bundle the extra gems:
-# gem 'bj'
-# gem 'nokogiri'
-# gem 'sqlite3-ruby', :require => 'sqlite3'
-# gem 'aws-s3', :require => 'aws/s3'
-
-# Bundle gems for the local environment. Make sure to
-# put test-only gems in this group so their generators
-# and rake tasks are available in development mode:
-# group :development, :test do
-#   gem 'webrat'
-# end
+group :development, :test do
+  if RUBY_VERSION.include?('1.9')
+    gem 'ruby-debug19'
+  else
+    gem 'ruby-debug'
+  end
+  gem 'factory_girl'
+  gem 'webrat'
+  gem 'rspec-rails', '>= 2.0.0.beta.20'
+  gem 'rcov'
+end

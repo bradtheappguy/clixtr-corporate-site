@@ -1,0 +1,95 @@
+h1. About Typo
+
+Being around since March 2005, Typo is (probably) the oldest blogging platform in Rails. It has a full set of feature you would expect from such an engine, powerful SEO capabilities and full themes and plugin
+extension. It is available as a gem or source tarball.
+
+Current version is Typo 6.0.3 for Ruby on Rails 3.0
+
+
+h2. Useful Links:
+
+* "Download Typo source code:":http://typosphere.org/stable.tgz
+* "*Report a bug*":http://fdv.lighthouseapp.com/projects/11171-typo-blog/overview
+* "*Frequently Asked Questions*":http://wiki.github.com/fdv/typo/frequently-asked-questions
+* "Official Typo blog":http://blog.typosphere.org
+* "Plugin directory":http://plugins.typosphere.org
+* "Typo themes":http://typogarden.org/
+* "Follow us on Twitter":httpL//twitter.com/typosphere
+
+h2. Get some help
+
+* IRC: #typo on irc.freenode.net
+* "Mailing list":http://rubyforge.org/mailman/listinfo/typo-list
+
+h2. Maintainers
+This is a list of Typo maintainers. If you have a commit bit, please add your name and contact details to the list.
+
+h3. The Cool Kids
+
+*Frédéric de Villamil* <frederic@de-villamil.com>
+blog: http://t37.net
+irc: neuro`
+
+*Matijs van Zuijlen*
+blog: http://www.matijs.net/blog/
+irc: matijs
+
+*Thomas Lecavelier*
+blog: http://blog.ookook.fr/
+irc: ook
+
+*Cyril Mougel*
+blog: http://blog.shingara.fr
+irc: shingara
+
+h3. Original Author
+
+Tobias Luetke
+blog: http://blog.leetsoft.com/
+irc:  xal
+
+
+h1. Installing Typo
+
+There are various way of installing Typo, but the easiest way is certainly using our gem.
+
+h2. 1. Prerequisites
+
+To install Typo you need the following:
+
+* Ruby 1.8.7 or Ruby Enterprise Edition, Typo is not Ruby 1.9 compliant
+* Ruby On Rails 3.0.0
+* A database engine, MySQL, PgSQL or SQLite3
+* The Ruby connector to your favourite database engine
+* A FTP client or even better SSH access to your hosting provider
+
+h2. 2. Get Typo
+
+Download Typo stable version at http://typosphere.org/stable.tar.gz or http://typosphere.org/stable.zip.
+
+h2. 3. Install Typo
+
+Unpack Typo archive into your Web hosting space.
+
+Rename database.yml.example to database.yml and fill in your database credentials for production mode. 
+
+Then run:
+
+$ bundle install
+$ rake RAILS_ENV=production db:migrate
+
+h2. 4. Start / stop Typo
+
+To use / test typo, run:
+
+./script/rails server
+
+h1. Daily use
+
+For a daily use, we reccomend to use Passenger (mod_rails) or Thin / Unicorn with Apache or Nginx.
+
+Typo's administrative interface is available at http://your.domain.com/admin. You can use this to post articles and change Typo's configuration settings. For posting new content, you can either use this administrative web interface or a desktop blog editor like MarsEdit or Ecto. For a short list of clients which are confirmed to work please visit http://typosphere.org/wiki/DesktopClients.
+
+Enjoy,
+Your typo team
+

@@ -1,0 +1,103 @@
+<% @page_heading = _('Search Engine Optimization') %>
+<% subtabs_for(:settings) %>
+
+<%= error_messages_for 'blog' %>
+
+<%= form_tag :action => 'update' do %>
+<div class='widget-container'>
+  <h3 class='light'>
+    <span class='ui-icon ui-icon-gear'></span> <%= _("Search Engine Optimisation")%>
+  </h3>
+  <div class='widget-content'>
+    <div class='setting'>
+      <label class="float"><%= _("Show blog name")%></label>
+      <div class='input_text'>
+        <%= radio_button(:setting, :title_prefix, 1)%>
+        <label for="setting_title_prefix_1"><%= _("At the beginning of page title")%></label><br />
+        <%= radio_button(:setting, :title_prefix, 2)%>
+        <label for="setting_title_prefix_2"><%= _("At the end of page title")%></label><br />
+        <%= radio_button(:setting, :title_prefix, 0)%>
+        <label for="setting_title_prefix_0"><%= _("Don't show blog name in page title")%></label>
+      </div>
+    </div>
+    <div class='setting clear'>
+      <label class="float" for="setting_permalink_format"><%= _("Format of permalink")%></label>
+      <div class='input_text'>
+        <%= text_field(:setting, :permalink_format, { :class => 'medium'})%>
+      </div>
+    </div>
+    <div class='setting clear'>
+      <label class="float" for="setting_google_analytics"><%= _("Google Analytics")%></label>
+      <div class='input_text'>
+        <%= text_field(:setting, :google_analytics, :class => 'medium')%>
+      </div>
+    </div>
+    <div class='setting clear'>
+      <label class="float" for="setting_google_verification"><%= _("Google verification link")%></label>
+      <div class='input_text'>
+        <%= text_field(:setting, :google_verification, :class => 'medium')%>
+      </div>
+    </div>
+    <div class='setting clear'>
+      <label class="float" for="setting_meta_description"><%= _("Meta description")%></label>
+      <div class='input_text'>
+        <%= text_area(:setting, :meta_description, :rows => 3, :class => 'medium')%>
+      </div>
+    </div>
+    <div class='setting clear'>
+      <label class="float" for="setting_meta_keywords"><%= _("Meta keywords")%></label>
+      <div class='input_text'>
+        <%= text_area(:setting, :meta_keywords, :rows => 3, :class => 'medium')%>
+      </div>
+    </div>
+    <div class='setting clear'>
+      <label class="float" for="setting_rss_description"><%= _("Use RSS description")%></label>
+      <div class='input_text'>
+        <%= check_box(:setting, :rss_description)%>
+        <span><%= "#{_('This will display')} #{show_rss_description} #{_('at the bottom of each of your post in the RSS feed')}"%></span>
+      </div>
+    </div>
+    <div class='setting clear'>
+      <label class="float" for="setting_rss_description"><%= _("RSS description message")%></label>
+      <div class='input_text'>
+          <%= text_area(:setting, :rss_description_text, :rows => 10, :class => 'medium')%>
+      </div>
+      <div class='input_text'><span class='help'>You can use the following tags: %author% (author name), %blog_url% (this blog URL), %blog_name% (this blog title) and %permalink_url% (a link to the article you want to protect)</span></div>
+    </div>
+    <div class='setting clear'>
+      <label class="float" for="setting_index_categories"><%= _("Index categories")%></label>
+      <div class='input_text'>
+        <%= check_box(:setting, :index_categories)%>
+        <span><%= _("Unchecking this box will add <code>noindex, follow</code> meta tags in every category page, removing them from search engines and preventing duplicate content issues") %></span>
+      </div>
+    </div>
+    <div class='setting clear'>
+      <label class="float" for="setting_index_tags"><%= _("Index tags")%></label>
+      <div class='input_text'>
+        <%= check_box(:setting, :index_tags)%>
+        <span><%= _("Unchecking this box will add <code>noindex, follow</code> meta tags in every tags page, removing them from search engines and preventing duplicate content issues") %></span>
+      </div>
+    </div>
+    <div class='setting clear'>
+      <label class="float" for="setting_robots"><%= _("Robots.txt")%></label>
+      <div class='input_text'>
+        <%= text_area(:setting, :robots, :rows => 10, :class => 'medium')%>
+      </div>
+    </div>
+    <div class='setting clear'>
+      <label class="float" for="setting_nofollowify"><%= _("Use nofollow in comments")%></label>
+      <div class='input_text'>
+        <%= check_box(:setting, :nofollowify)%>
+        <span><%= _("Maybe you want to moderate feedbacks when turning this off") %></span>
+      </div>
+    </div>
+    
+  </div>
+
+  <% unless robot_writable? -%>
+    <div class='mandatory'><small><%= _("You robots.txt file is not writeable. Typo won't be able to write it")%></small></div>
+  <% end -%>
+</div>
+<%= hidden_field_tag 'from', 'seo' %>
+<%= render :partial => 'submit' %>
+<% end %>

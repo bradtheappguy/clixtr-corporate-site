@@ -1,0 +1,21 @@
+<%= content_tag :h3, link_to(image_tag("/images/admin/typologo.gif", :alt=>"Typo website"), "http://typosphere.org") %>
+
+<div id="flash"><%= render_the_flash %></div>
+
+<%= form_tag :action=> "login" do %>
+  <h3><label for="user_login"><%= _('Login')%></label></h3>
+  <p class='input_text_title'>
+    <%= text_field(:user, :login, {:class => 'title large'})%>
+  </p>
+  <h3><label for="user_password"><%= _('Password')%></label></h3>
+  <p class='input_text_title'>
+    <%= password_field(:user, :password, {:class => 'title large'})%>
+  </p>
+  <label for="remember_me"><%= _('Remember me')%>
+    <%= check_box_tag 'remember_me' %>
+  </label>
+  <p>
+    <input type="submit" name="login" value= "<%= _('Submit') %>" class="save large" id="submit" />
+  </p>
+  <%= display_accounts_link %>
+<% end %>

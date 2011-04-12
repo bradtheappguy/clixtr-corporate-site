@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  padding: 0;
+	font: 12px/18px 'Lucida Grande', 'Lucida Sans',Arial,sans-serif;
+  color: #000;
+	background: #023;
+}
+
+a {
+	color: #2779AA;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #116088;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	color: #116088;
+}
+
+h1 {
+	font-size: 18px;
+	padding: 10px 0 0 0;
+}
+
+h2 {
+	font-size: 16px;
+}
+
+h3 {
+	text-align: center;
+}
+
+h3 label {
+	display: block;
+	text-align: left;
+	font-weight: bold;
+}
+
+p {
+	margin-top: 0;
+	padding-top: 10px;
+}
+
+.large {
+	width: 99%;
+}
+
+.medium {
+  width: 50%;
+}
+
+input.title {
+  padding: 3px 5px;
+  margin: 0;
+  border: #023 1px solid;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font: 16px/20px "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+}
+
+input.save {
+  color: #fff;
+  background: #fb7c00;
+  border: #fb7c00 1px solid;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 5px 0;
+}
+
+#logincontainer, #setupcontainer {
+  background: #fff;
+  margin: 80px auto 0 auto;
+  border: #00131e 1px solid;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#logincontainer {
+	width: 300px;
+}
+
+#setupcontainer {
+	width: 500px;
+}
+
+.inner {
+  padding: 20px;
+}
+
+h3 a img {
+  border: none;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+/* Import for flash, maybe this should go into a common.css? */
+.error {
+  -moz-border-radius: 3px; 
+  -webkit-border-radius: 3px; 
+  border-radius: 3px;
+  padding: 0.7em; 
+  margin: 0.7em 0;
+  border: 1px solid #cd0a0a; 
+  display :block;
+  background: #cd0a0a url(../images/admin/ui-bg_flat_15_cd0a0a_40x100.png) 50% 50% repeat-x; color: #ffffff; 
+}
+
+.ui-state-highlight {
+  border: 1px solid #f9dd34; background: #ffef8f url(../images/admin/ui-bg_highlight-soft_25_ffef8f_1x100.png) 50% top repeat-x; color: #363636; -moz-border-radius: 3px; 
+-webkit-border-radius: 3px;   padding: 0.7em; 
+  margin: 0.7em 0;
+
+ }
