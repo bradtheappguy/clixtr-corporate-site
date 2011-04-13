@@ -9,6 +9,9 @@ TypoBlog::Application.configure do
   config.consider_all_requests_local = false
   config.action_controller.perform_caching             = true
 
+  ActionController::Base.page_cache_directory = "#{RAILS_ROOT}/tmp/" 
+  config.cache_store = :file_store, "#{RAILS_ROOT}/tmp/"
+
   # See everything in the log (default is :info)
   # config.log_level = :debug
 
