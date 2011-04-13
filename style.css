@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+/*RESET----
+Copyright (c) 2010, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 3.3.0
+build: 3167
+*/
+html{color:#041e2b;background:#000;height:100%;}body{height:100%;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}
+img{width:100%;}
+@font-face{font-family:'NobileRegular';src:url('fonts/nobile-webfont.eot');src:url('fonts/nobile-webfont.eot?#iefix')format('eot'),url('fonts/nobile-webfont.woff')format('woff'),url('fonts/nobile-webfont.ttf')format('truetype'),url('fonts/nobile-webfont.svg#webfontsKo9tqe9')format('svg');font-weight:normal;font-style:normal}@font-face{font-family:'NobileItalic';src:url('fonts/nobile_italic-webfont.eot');src:url('fonts/nobile_italic-webfont.eot?#iefix')format('eot'),url('fonts/nobile_italic-webfont.woff')format('woff'),url('fonts/nobile_italic-webfont.ttf')format('truetype'),url('fonts/nobile_italic-webfont.svg#webfonttc09wOXW')format('svg');font-weight:normal;font-style:normal}@font-face{font-family:'NobileBold';src:url('fonts/nobile_bold-webfont.eot');src:url('fonts/nobile_bold-webfont.eot?#iefix')format('eot'),url('fonts/nobile_bold-webfont.woff')format('woff'),url('fonts/nobile_bold-webfont.ttf')format('truetype'),url('fonts/nobile_bold-webfont.svg#webfont6RUKcuF0')format('svg');font-weight:normal;font-style:normal}@font-face{font-family:'NobileBoldItalic';src:url('fonts/nobile_bold_italic-webfont.eot');src:url('fonts/nobile_bold_italic-webfont.eot?#iefix')format('eot'),url('fonts/nobile_bold_italic-webfont.woff')format('woff'),url('fonts/nobile_bold_italic-webfont.ttf')format('truetype'),url('fonts/nobile_bold_italic-webfont.svg#webfontClxEK9et')format('svg');font-weight:normal;font-style:normal}
+
+body{ width:100%; height:auto; background-image:url(images/gradientbg_lrg.png); background-color:#041e2b; margin:0; padding:0;font:12px/20px 'NobileRegular',Arial, Helvetica, sans-serif; color:#666;}
+.head_bg{ height:109px; width:100%; padding:0; margin:0; background:url(images/header_gr.png) repeat-x; }
+#wrap{ width:944px; min-height:100%; height:auto; margin:-140px auto 0 auto; padding:0 8px;}
+.head{ height:108px; width:904px; padding:0 20px; margin:0; font-family:Arial, Helvetica, sans-serif;}
+.logo{ width:269px; height:95px;  margin:44px 0; float:left; z-index:0; position:absolute;}
+.title{ width:200px; height:96px; float:left; margin:0; padding:25px 0 0 0;}
+h2{ margin:0; font-size:20px; font-family:'NobileBold' ,'Arial Black', 'Helvetica', sans-serif; letter-spacing:1px; color:#006699; padding:0 0 -200px 0;}
+.menu{ width:300px; height:81px; float:right; margin:36px -10px 0 100px; padding:70px 0 70px 0; color:#888; font-size:18px; text-align:right; font-family:'NobileRegular';}
+.menu li {display: block; float: left; width:100px;}
+.menu li a, .menu li a:visited {text-decoration: none; padding:0 10px 0; color:#006699;}
+.menu li a:hover{color:#229ddb;}
+.head p { margin:0; padding:0; line-height:20px;}
+.head a{ color:#888; text-decoration:none; padding:0 2px;}
+.head a:hover{ color:#229ddb;}
+
+.banner{height:60px; width:944px; padding:0; margin:-5px 0 20px 0; /* background: white; */ font-family:'NobileItalic', Arial, Helvetica, sans-serif; letter-spacing:2px; 
+/*
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+-moz-box-shadow: inset 0 0 5px #888;
+-webkit-box-shadow: inset 0 0 5px#888;
+box-shadow: inner 0 0 5px #888;
+*/
+}
+/* .banner_shadow{background: url(images/shadow_top.png) no-repeat; position:absolute; margin:41px 0 0 80px; width:850px; height:21px;} */
+.title_em{color:#006699; font-family:'NobileBold'; z-index:100; margin:0; text-shadow:none;}
+.banner-text h1{ width:900px; padding:0 10px; font-size:20px; letter-spacing:1px; text-align:center; color:#666; line-height:30px; margin-top:-100px; z-index:50; float: left;
+ text-shadow: rgba(0,0,0,0.5) 1px 0, rgba(0,0,0,0.3) 0 1px, rgba(0,0,0,0.5) 0 1px, rgba(255,255,255,0.3) 1px -1px;
+}
+
+.content_hilite{background: url(images/shadow_top.png) no-repeat; position:absolute; margin:80px 0 0 80px; width:850px; height:19px;}
+.content{height:auto; width:913px; padding:0 0 20px 0; margin:-55px 0 25px 0; background:#fff; border:15px #041e2b solid;
+-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; float:left;}
+.app{width:280px; height:530px; float:left; margin:15px 150px 0 10px; }
+.app_img{ width:120%; float:left; margin:10px 55px 0 55px;}
+./* desc, .app_title h2 */app a {text-decoration:none; color:inherit;}
+.app_info{ position:relative; margin:405px 0; height:100px; width:280px;}
+.icon, .app_title h2, .desc  {position:absolute; z-index:100;}
+.icon { margin:0 80px; }
+.app_title h2 { margin:0px 0 0 80px;}
+.icon{ height:45px; width:45px; float:left;}
+.app_title h2{ float:left; width:200px; height:40px; font-size:24px; font-family:'NobileBold'; line-height:0; color:#006699; padding:25px 0 0 55px;}
+.desc{ margin:0 83px; width:300px; font-size:12px; color:#666; float:left; padding:50px 0;}
+.content-bottom{ width:944px; height:5px;}
+.foot_hilite{position:absolute; margin:-45px 0 0 110px; background: url(images/footer_hilite.png) no-repeat; height:209px; width:776px;}
+.foot{ clear:both; width:100%; padding:0; margin:0; height:250px; background:#041e2b; }
+.foot_links{ width:944px; margin:0 auto; padding:20px;}
+.foot ul{float:left; width:150px; margin:0 0 0 135px;}
+.foot li{display:block; line-height:30px;}
+
+/*------press---------*/
+h4{ margin:0; padding:0; color:#fff; font-size:26px; float: left;}
+h5{ margin:15px 0 5px 0; padding:0 0 0 0; color:#006699; font-size:20px; font-weight:lighter; float: left; width: 100%; display: block;}
+.left{ width:450px; height:auto; padding:/* 13px */32px 0 0 50px; color:#666; float:left; }
+.left p{ margin:0; padding:10px 0 0 0; font-size:14px; line-height:20px;}
+.left a { color:#999;}
+.right{ width:274px; margin:-480px 60px 0 0; padding:0 20px 20px 20px; color:#666; float:right; background:rgba(150,150,150,0.2);
+/*look up for opera*/-moz-box-shadow: inset 0 0 5px #888;-webkit-box-shadow: inset 0 0 5px#888;box-shadow: inner 0 0 5px #888; }
+/* .right_nodes{display:block; height:auto; padding-bottom: 20px;} */
+.right p{ margin:0; padding:0 0 0 0; font-size:12px; line-height:20px; float: left;}
+/* .margin_more{} */
+.social, .press_kit {width:100%; margin:10px 10px 0px -5px;}
+.contact {width:100%; margin:15px 0 0 17px;}
+.social img{width:70%; float:left;display:block; margin-left:10px;}
+.contact li, .pic_bounce li, .social li, .press_kit li {display:block; float:left;}
+.contact li{margin:0 0 0 -15px; width:50px; }
+/* .pic_bounce li {width:40%;} */
+.pic img{width:10%;}
+.press_kit li{margin:5px 0 0 10px;}
+.press_kit img{width:100%;}
+.thumb_title {margin:0; padding:5px 5px 0 0; float:left;}
+.right a, .right a:visited{text-decoration: none; color: inherit;}
+.contact li img {width:60%;}
+
+/*---------team-----------
+.ProOverview{ width:824px; height:160px; margin: 30px 0 0  0; padding:0;}
+.ProImg{ float:left; width:216px; height:160px;}
+.portfolio-txt{ float:left; width:580px; height:160px; padding:0 0 0 28px; margin:0;}
+.portfolio-txt p{ margin:0; padding:10px 0 0 0; font-size:14px; line-height:22px;}
+.portfolio-txt a { color:#999;}*/
+
+h3{ margin:0; padding:0;font-size:18px;font-weight:lighter; }
+.ProOverview{ width:824px; height:160px; margin:27px 0 0 50px; padding:0;}
+.ProOverview h2{padding:5px 0 15px 0;}
+.more_margin{margin:90px 0 0 50px; }
+.ProImg{ float:left; width:216px; height:160px; padding:10px; border:1px solid #999;}
+.portfolio-txt{ float:left; width:520px; height:160px; padding:0 0 0 38px; margin:0;}
+.portfolio-txt p{ margin:0; padding:10px 0 0 0; font-size:14px; line-height:22px;}
+.portfolio-txt a { color:#999;}
