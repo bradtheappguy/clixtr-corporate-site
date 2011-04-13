@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-TypoBlog::Application.load_tasks
+ClixtrCorporateSite::Application.load_tasks
