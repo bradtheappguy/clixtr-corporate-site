@@ -12,7 +12,6 @@ body{ width:100%; height:100%; background-image:url(images/gradientbg_lrg.png); 
 .head_bg{ height:109px; width:100%; padding:0; margin:0; background:url(images/header_gr.png) repeat-x; }
 .head{ height:108px; width:904px; padding:0 20px; margin:0; font-family:Arial, Helvetica, sans-serif;}
 .logo{ width:269px; height:95px;  margin:44px 0; float:left; z-index:0; position:absolute;}
-.title{ width:200px; height:96px; float:left; margin:0; padding:25px 0 0 0;}
 h2{ margin:0; font-size:20px; font-family:'NobileBold' ,'Arial Black', 'Helvetica', sans-serif; letter-spacing:1px; color:#006699; padding:0 0 -200px 0;}
 .head p { margin:0; padding:0; line-height:20px;}
 .head a{ color:#888; text-decoration:none; padding:0 2px;}
@@ -33,13 +32,13 @@ text-shadow: rgba(255,255,255,1) 1px 0, rgba(255,255,255,1) 0 1px, rgba(255,255,
 -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; float:left;}
 .app{width:280px; height:530px; float:left; margin:15px 150px 0 10px; }
 .app_img{ width:120%; float:left; margin:10px 55px 0 55px;}
-.app a {text-decoration:none; color:inherit;}
+.app a, .app a:visited {text-decoration:none; color:#999;}
+.app a:hover {text-decoration:none; color:#229ddb;}
 .app_info{ position:relative; margin:405px 0; height:100px; width:280px;}
 .icon, .app_title h2, .desc  {position:absolute; z-index:100;}
 .icon { margin:0 80px; }
-.app_title h2 { margin:0px 0 0 80px;}
 .icon{ height:45px; width:45px; float:left;}
-.app_title h2{ float:left; width:200px; height:40px; font-size:24px; font-family:'NobileBold'; line-height:0; color:#006699; padding:25px 0 0 55px;}
+.app_title h2 a{ margin:0px 0 0 80px; float:left; width:200px; height:40px; font-size:24px; font-family:'NobileBold'; line-height:0; color:#006699; padding:25px 0 0 55px;}
 .desc{ margin:0 83px; width:300px; font-size:12px; color:#666; float:left; padding:50px 0;}
 .content-bottom{ width:944px; height:5px;}
 /*footer*/
@@ -56,10 +55,9 @@ h4{ margin:0; padding:0; color:#fff; font-size:26px; float: left;}
 h5{ margin:15px 0 5px 0; padding:0 0 0 0; color:#006699; font-size:20px; font-weight:lighter; float: left; width: 100%; display: block;}
 .left{ width:463px; height:auto; padding:32px 0 0 48px; color:#666; float:left; }
 .left p{ margin:0; padding:10px 0 0 0; font-size:14px; line-height:20px;}
-.left a, .left a:visited { color:#229ddb;}
-.left a:hover { color:#006699;}
-.right{ width:243px; margin:-480px 60px 0 0; padding:0 20px 20px 20px; color:#666; float:right; background:rgba(150,150,150,0.2);
-/*look up for opera*/-moz-box-shadow: inset 0 0 5px #888;-webkit-box-shadow: inset 0 0 5px#888;box-shadow: inner 0 0 5px #888; }
+.left a, .left a:visited { text-decoration:none; color:#006699;}
+.left a:hover { color:#229ddb;}
+.right{ width:243px; margin:-480px 65px 0 0; padding:0 20px 20px 20px; color:#666; float:right; 			background-color:rgb(250,250,250); /*look up for opera*/-moz-box-shadow: inset 0 0 5px #888;-webkit-box-shadow: inset 0 0 5px #888; box-shadow: inner 0 0 5px #888; }
 .right p{ margin:0; padding:0 0 0 0; font-size:12px; line-height:20px; float: left;}
 .social, .press_kit {width:100%; margin:10px 10px 0px -5px;}
 .contact {width:100%; margin:15px 0 0 17px;}

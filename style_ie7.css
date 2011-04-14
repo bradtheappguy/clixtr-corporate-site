@@ -1,0 +1,20 @@
+.banner-text h1{ margin-top:55px; z-index:50; float: left; }
+.content_hilite{ margin:92px 0px 0 -850px; }
+.content{ margin:30px 0 25px 0; padding:0 0 60px 0; }
+.app_info{ position:relative; margin:0 ; width:280px;}
+.app_title h2 a{ margin:0 80px; line-height:20px; padding:15px 0 0 55px;}
+.desc{ margin:0 83px;}
+
+/*------press---------*/
+.right{ margin:-510px 65px 0 0; padding:0 20px 20px 20px; }
+
+.right p{ margin:0; padding:0 0 0 0; font-size:12px; line-height:20px; float: left;}
+.press_kit { margin-top:0; }
+.social { margin-top:0; }
+.contact { margin-top:0; }
+.doc img{width:16%;}
+.pdf img{width:10%;}
+.facebook img{width:11%;}
+.twitter img{width:13%;}
+.clixtr img{width:100%;}
+.picbounce img{ height:30px; margin-left:4px;}
