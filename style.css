@@ -1,65 +1,62 @@
 @charset "utf-8";
 /* CSS Document */
-/*RESET---- Copyright (c) 2010, Yahoo! Inc. All rights reserved.Code licensed under the BSD License:http://developer.yahoo.com/yui license.html version:3.3.0 build: 3167*/body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}
+/*RESET---- Copyright (c) 2010, Yahoo! Inc. All rights reserved.Code licensed under the BSD License:http://developer.yahoo.com/yui license.html version:3.3.0 build: 3167*/html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}
 img{width:100%;}
 /*Typography -- @font face selectors font:Nobile compliments of http://fontsquirrel.com*/
-@font-face{font-family:'NobileRegular';src:url('fonts/nobile-webfont.eot');src:url('fonts/nobile-webfont.eot?#iefix')format('eot'),url('fonts/nobile-webfont.woff')format('woff'),url('fonts/nobile-webfont.ttf')format('truetype'),url('fonts/nobile-webfont.svg#webfontsKo9tqe9')format('svg');font-weight:normal;font-style:normal}@font-face{font-family:'NobileItalic';src:url('fonts/nobile_italic-webfont.eot');src:url('fonts/nobile_italic-webfont.eot?#iefix')format('eot'),url('fonts/nobile_italic-webfont.woff')format('woff'),url('fonts/nobile_italic-webfont.ttf')format('truetype'),url('fonts/nobile_italic-webfont.svg#webfonttc09wOXW')format('svg');font-weight:normal;font-style:normal}@font-face{font-family:'NobileBold';src:url('fonts/nobile_bold-webfont.eot');src:url('fonts/nobile_bold-webfont.eot?#iefix')format('eot'),url('fonts/nobile_bold-webfont.woff')format('woff'),url('fonts/nobile_bold-webfont.ttf')format('truetype'),url('fonts/nobile_bold-webfont.svg#webfont6RUKcuF0')format('svg');font-weight:normal;font-style:normal}@font-face{font-family:'NobileBoldItalic';src:url('fonts/nobile_bold_italic-webfont.eot');src:url('fonts/nobile_bold_italic-webfont.eot?#iefix')format('eot'),url('fonts/nobile_bold_italic-webfont.woff')format('woff'),url('fonts/nobile_bold_italic-webfont.ttf')format('truetype'),url('fonts/nobile_bold_italic-webfont.svg#webfontClxEK9et')format('svg');font-weight:normal;font-style:normal}
+@font-face{font-family:'NobileRegular';src:url('fonts/nobile-webfont.eot');src:url('fonts/nobile-webfont.eot?#iefix')format('eot'),url('fonts/nobile-webfont.woff')format('woff'),url('fonts/nobile-webfont.ttf')format('truetype'),url('fonts/nobile-webfont.svg#webfontsKo9tqe9')format('svg');font-weight:normal;font-style:normal}@font-face{font-family:'NobileItalic';src:url('fonts/nobile_italic-webfont.eot');src:url('fonts/nobile_italic-webfont.eot?#iefix')format('eot'),url('fonts/nobile_italic-webfont.woff')format('woff'),url('fonts/nobile_italic-webfont.ttf')format('truetype'),url('fonts/nobile_italic-webfont.svg#webfonttc09wOXW')format('svg');font-weight:normal;font-style:normal}@font-face{font-family:'NobileBold';src:url('fonts/nobile_bold-webfont.eot');src:url('fonts/nobile_bold-webfont.eot?#iefix')format('eot'),url('fonts/nobile_bold-webfont.woff')format('woff'),url('fonts/nobile_bold-webfont.ttf')format('truetype'),url('fonts/nobile_bold-webfont.svg#webfont6RUKcuF0')format('svg');font-weight:normal;font-style:normal}@font-face{font-family:'NobileBoldItalic';src:url('fonts/nobile_bold_italic-webfont.eot');src:url('fonts/nobile_bold_italic-webfont.eot?#iefix')format('eot'),url('fonts/nobile_bold_italic-webfont.woff')format('woff'),url('fonts/nobile_bold_italic-webfont.ttf')format('truetype'),url('fonts/nobile_bold_italic-webfont.svg#webfontClxEK9et')format('svg');font-weight:normal;font-style:normal;}
 
-html{color:#041e2b; background:url(images/gradientbg_lrg.png); height:100%;} 
-body{ width:100%; height:100%; background-image:url(images/gradientbg_lrg.png); background-color:#98b4c0;font:12px/20px 'NobileRegular',Arial, Helvetica, sans-serif; color:#666;}
-#wrap{ width:944px; min-height:auto; height:auto; margin:-140px auto 0 auto; padding:0 8px;}
+html{color:#041e2b; background:url(images/gradientbg_lrg.png); height:100%; } 
+body{ width:100%; height:auto; background-image:url(images/gradientbg_lrg.png); background-color:#98b4c0;font:12px/20px 'NobileRegular',Arial, Helvetica, sans-serif; color:#666;}
+#wrap{ width:100%; height:auto; margin:0; padding:0;}
 /*header*/
-.head_bg{ height:109px; width:100%; padding:0; margin:0; background:url(images/header_gr.png) repeat-x; }
-.head{ height:108px; width:904px; padding:0 20px; margin:0; font-family:Arial, Helvetica, sans-serif;}
-.logo{ width:269px; height:95px;  margin:44px 0; float:left; z-index:0; position:absolute;}
-.title{ width:200px; height:96px; float:left; margin:0; padding:25px 0 0 0;}
+.head_bg{ height:109px; min-width:1080px; padding:0; margin:0; background:url(images/header_gr.png) repeat-x; }
+.head{ height:109px; width:944px; padding:0; margin:0 auto; }
+.logo{ width:269px; height:95px;  margin:15px 0; float:left; z-index:0; }
 h2{ margin:0; font-size:20px; font-family:'NobileBold' ,'Arial Black', 'Helvetica', sans-serif; letter-spacing:1px; color:#006699; padding:0 0 -200px 0;}
 .head p { margin:0; padding:0; line-height:20px;}
 .head a{ color:#888; text-decoration:none; padding:0 2px;}
 .head a:hover{ color:#229ddb;}
-.banner{height:60px; width:944px; padding:0; margin:-5px 0 20px 0; /* background: white; */ 
-        font-family:'NobileItalic', Arial, Helvetica, sans-serif; letter-spacing:2px; }
-.title_em{color:#006699; font-family:'NobileBold'; z-index:100; margin:0; }
-.banner-text h1{ width:900px; padding:0 10px; font-size:20px; letter-spacing:1px; text-align:center; color:#666; line-height:30px; margin-top:-100px; z-index:50; float: left;
-text-shadow: rgba(255,255,255,1) 1px 0, rgba(255,255,255,1) 0 1px, rgba(255,255,255,1) 0 1px, rgba(255,255,255,1) 1px -1px;}
 /*main nav*/
-.menu{ width:300px; height:81px; float:right; margin:36px -10px 0 100px; padding:70px 0 70px 0; color:#888; font-size:18px; text-align:right; font-family:'NobileRegular';}
+.menu{ width:300px; height:81px; float:right; margin:5px -10px 0 100px; padding:70px 0 70px 0; color:#888; font-size:18px; text-align:right; font-family:'NobileRegular';}
 .menu li {display: block; float: left; width:100px;}
 .menu li a, .menu li a:visited {text-decoration: none; padding:0 10px 0; color:#006699;}
 .menu li a:hover{color:#229ddb;}
 /*content*/
-.content_hilite{background: url(images/shadow_top.png) no-repeat; position:absolute; margin:80px 0 0 80px; width:850px; height:19px;}
-.content{height:auto; width:913px; padding:0 0 20px 0; margin:-55px 0 25px 0; background:#fff; border:15px #041e2b solid;
--moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; float:left;}
-.app{width:280px; height:530px; float:left; margin:15px 150px 0 10px; }
+.banner{height:60px; width:944px; padding:0; margin:-5px auto 20px auto; font-family:'NobileItalic', Arial, Helvetica, sans-serif; letter-spacing:2px; }
+.title_em{color:#006699; font-family:'NobileBold'; }
+.banner-text{width:100%;}
+.banner-text h1{ width:800px; padding:0; font-size:20px; letter-spacing:1px; color:#666; line-height:30px; float:right; margin:-100px -30px 0 0; text-shadow:rgba(255,255,255,1) 1px 0, rgba(255,255,255,1) 0 1px, rgba(255,255,255,1) 0 1px, rgba(255,255,255,1) 1px -1px;}
+.content_container{min-width:1080px; width:100%; margin:0; padding:0;}
+.content_hilite{background: url(images/shadow_top.png) no-repeat; margin:45px auto 0 auto; width:850px; height:19px;}
+.content{min-height:530px; width:913px; padding:0px 0 20px 0; margin:-61px auto 25px auto; background:#fff; border:15px #041e2b solid; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
+.app{width:280px; height:530px; float:left; margin:-35px 150px 0 10px; }
 .app_img{ width:120%; float:left; margin:10px 55px 0 55px;}
-.app a {text-decoration:none; color:inherit;}
+.app a, .app a:visited {text-decoration:none; color:#999;}
+.app a:hover {text-decoration:none; color:#229ddb;}
 .app_info{ position:relative; margin:405px 0; height:100px; width:280px;}
 .icon, .app_title h2, .desc  {position:absolute; z-index:100;}
 .icon { margin:0 80px; }
-.app_title h2 { margin:0px 0 0 80px;}
 .icon{ height:45px; width:45px; float:left;}
-.app_title h2{ float:left; width:200px; height:40px; font-size:24px; font-family:'NobileBold'; line-height:0; color:#006699; padding:25px 0 0 55px;}
+.app_title h2 a{ margin:0px 0 0 80px; float:left; width:200px; height:40px; font-size:24px; font-family:'NobileBold'; line-height:0; color:#006699; padding:25px 0 0 55px;}
 .desc{ margin:0 83px; width:300px; font-size:12px; color:#666; float:left; padding:50px 0;}
 .content-bottom{ width:944px; height:5px;}
 /*footer*/
 #push{height:300px;}
 .clear{clear:both;}
 .foot_hilite{position:absolute; margin:-45px 0 0 70px; background: url(images/footer_hilite.png) no-repeat; height:209px; width:776px;}
-.foot{ position:relative; clear:both; width:100%; height:250px; background:#041e2b; }
+.foot{ position:relative; clear:both; min-width:1080px; height:250px; background:#041e2b; }
 .foot_links{ width:900px; margin:0 auto; padding:20px;}
 .foot ul{float:left; width:150px; margin:0 0 0 135px;}
 .foot li{display:block; line-height:30px;}
 
 /*------press---------*/
 h4{ margin:0; padding:0; color:#fff; font-size:26px; float: left;}
-h5{ margin:15px 0 5px 0; padding:0 0 0 0; color:#006699; font-size:20px; font-weight:lighter; float: left; width: 100%; display: block;}
-.left{ width:463px; height:auto; padding:32px 0 0 48px; color:#666; float:left; }
+h5{ margin:10px 0 5px 0; padding:0 0 0 0; color:#006699; font-size:20px; font-weight:lighter; float: left; width: 100%; display: block;}
+.left{ width:463px; height:auto; padding:0 0 0 48px; margin:-5px 0 0 0; color:#666; float:left; }
 .left p{ margin:0; padding:10px 0 0 0; font-size:14px; line-height:20px;}
-.left a, .left a:visited { color:#229ddb;}
-.left a:hover { color:#006699;}
-.right{ width:243px; margin:-480px 60px 0 0; padding:0 20px 20px 20px; color:#666; float:right; background:rgba(150,150,150,0.2);
-/*look up for opera*/-moz-box-shadow: inset 0 0 5px #888;-webkit-box-shadow: inset 0 0 5px#888;box-shadow: inner 0 0 5px #888; }
+.left a, .left a:visited { text-decoration:none; color:#006699;}
+.left a:hover { color:#229ddb;}
+.right{ width:243px; margin:0 65px 0 0; padding:0 20px 20px 20px; color:#666; float:right; background-color:rgb(250,250,250); /*look up for opera*/-moz-box-shadow: inset 0 0 5px #888;-webkit-box-shadow: inset 0 0 5px #888; box-shadow: inner 0 0 5px #888; }
 .right p{ margin:0; padding:0 0 0 0; font-size:12px; line-height:20px; float: left;}
 .social, .press_kit {width:100%; margin:10px 10px 0px -5px;}
 .contact {width:100%; margin:15px 0 0 17px;}
