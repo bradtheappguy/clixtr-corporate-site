@@ -1,0 +1,36 @@
+<?php
+/**
+ * The template for displaying the footer.
+ *
+ * Contains the closing of the id=main div and all content
+ * after.  Calls sidebar-footer.php for bottom widgets.
+ *
+ * @package WordPress
+ * @subpackage Twenty_Ten
+ * @since Twenty Ten 1.0
+ */
+?>
+	</div><!-- #main -->
+
+	<div id="footer" class="foot" role="contentinfo">
+		
+			<div class="foot_links"><div class="foot_hilite"></div>
+           <ul><li>Clixtr 2011</li><li>Clixtr 2011</li><li>Clixtr 2011</li></ul>
+           <ul><li>Clixtr 2011</li><li>Clixtr 2011</li><li>Clixtr 2011</li></ul>
+           <ul><li>Clixtr 2011</li><li>Clixtr 2011</li><li>Clixtr 2011</li></ul>
+		</div>     
+
+	</div><!-- #footer -->
+
+</div><!-- #wrapper -->
+
+<?php
+	/* Always have wp_footer() just before the closing </body>
+	 * tag of your theme, or you will break many plugins, which
+	 * generally use this hook to reference JavaScript files.
+	 */
+
+	wp_footer();
+?>
+</body>
+</html>

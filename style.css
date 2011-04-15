@@ -29,7 +29,7 @@ h2{ margin:0; font-size:20px; font-family:'NobileBold' ,'Arial Black', 'Helvetic
 .content_container{min-width:1080px; width:100%; margin:0; padding:0;}
 .content_hilite{background: url(images/shadow_top.png) no-repeat; margin:45px auto 0 auto; width:850px; height:19px;}
 .content{min-height:530px; width:913px; padding:0px 0 20px 0; margin:-61px auto 25px auto; background:#fff; border:15px #041e2b solid; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
-.app{width:280px; height:530px; float:left; margin:-35px 150px 0 10px; }
+.app{width:280px; height:530px; float:left; margin:20px 150px 0 10px; }
 .app_img{ width:120%; float:left; margin:10px 55px 0 55px;}
 .app a, .app a:visited {text-decoration:none; color:#999;}
 .app a:hover {text-decoration:none; color:#229ddb;}
