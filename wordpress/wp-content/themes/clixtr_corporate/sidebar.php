@@ -7,7 +7,7 @@
  * @since Twenty Ten 1.0
  */
 ?>
-
+<div class="right">
 		<div id="primary" class="widget-area" role="complementary">
 			<ul class="xoxo">
 
@@ -53,4 +53,5 @@
 			</ul>
 		</div><!-- #secondary .widget-area -->
 
+</div><!--right-->
 <?php endif; ?>

@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-     <div class="content">
+     <div id="content">
               <ul class="app">
               	<li class="app_img"><a href="http://clixtr.com"><img src="<?php bloginfo('template_directory'); ?>/images/clixtr_iphones.png"/></a></li>
                  <li class="app_info">
