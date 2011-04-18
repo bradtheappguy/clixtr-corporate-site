@@ -14,8 +14,7 @@
 
 get_header(); ?>
   
-     <div id="container">
-      <div id="content" role="main">
+     <div class="content">
      	<div class="left">
           <h2>Press</h2>
 		<p> 
@@ -31,12 +30,7 @@ get_header(); ?>
 		</p> 
 	</div> 
 		</div><!--left-->
-            <?php get_sidebar(); ?>
- </div><!--content-->
-</div><!--container-->
-	<?php get_footer();
-	/*
-<div class="right">
+            <div class="right">
             <div class="right_nodes"><h5>Download Our Press Kit</h5>
             	  <ul class="press_kit">
             	   <!--  <li class="less_margin">pdf</li> -->
@@ -62,9 +56,9 @@ get_header(); ?>
                     <li><a href="#"><!-- <span class="thumb_title">picbounce</span> --><img src="<?php bloginfo('template_directory'); ?>/images/picbounce_ico.png" /></a></li>
                   </ul>
             </div><!--right_node-->
-*/
-	
-	?>
+         </div><!--content-->
+
+	<?php get_footer(); ?>
 
 </body>
 </html>
