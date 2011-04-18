@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Two column, sidebar 
+ * Template Name: Blog Two column, sidebar 
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
  * and that other 'pages' on your WordPress site will use a
@@ -15,7 +15,7 @@ get_header(); ?>
 
        <div id="container">
            <div id="content" role="main">
-	<div class="left">
+  
            <?php
            /* Run the loop to output the page.
             * If you want to overload this in a child theme then include a file
@@ -23,7 +23,7 @@ get_header(); ?>
             */
            get_template_part( 'loop', 'page' );
            ?>
-	</div><!--left-->
+   
 <?php get_sidebar(); ?>
            </div><!-- #content -->
        </div><!-- #container -->

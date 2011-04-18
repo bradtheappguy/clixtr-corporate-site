@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-     <div class="content">
+     <div id="content">
               <ul class="app">
               	<li class="app_img"><a href="http://clixtr.com"><img src="<?php bloginfo('template_directory'); ?>/images/clixtr_iphones.png"/></a></li>
                  <li class="app_info">
@@ -30,7 +30,8 @@ get_header(); ?>
                     <div class="app_title"><h2><a href="http://picbounce.com">PicBounce</a></h2></div>
                     <div class="desc"><a href="http://picbounce.com">PicBounce is the easiest and fastest way to upload a photo from an iPhone to Facebook or Twitter.</a> </div>
                  </li>
-              </ul>  
+              </ul>
+          
      </div><!--content-->
  
     	<?php get_footer(); ?>

@@ -10,19 +10,21 @@
  * @since Twenty Ten 1.0
  */
 ?>
+
+</div><!-- #wrapper -->
 	</div><!-- #main -->
 
 	<div id="footer" class="foot" role="contentinfo">
 		
 			<div class="foot_links"><div class="foot_hilite"></div>
-           <ul><li>Clixtr 2011</li><li>Clixtr 2011</li><li>Clixtr 2011</li></ul>
-           <ul><li>Clixtr 2011</li><li>Clixtr 2011</li><li>Clixtr 2011</li></ul>
-           <ul><li>Clixtr 2011</li><li>Clixtr 2011</li><li>Clixtr 2011</li></ul>
+            <ul><li>Blog</li><li>Press</li><li>Legal</li></ul>
+           <ul><li>Contact</li><li>About</li><li>Privacy</li></ul>
+           <ul><li>Downloads</li><li>Team</li><li>&copy;Clixtr 2011</li></ul>
 		</div>     
 
 	</div><!-- #footer -->
 
-</div><!-- #wrapper -->
+
 
 <?php
 	/* Always have wp_footer() just before the closing </body>

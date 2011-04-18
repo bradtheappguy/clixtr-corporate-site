@@ -72,19 +72,20 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 
 #container {
 	float: left;
-	margin: 0 -240px 0 0;
+	margin: 0;
 	width: 100%;
+	/*padding-bottom: 300px;*/
 }
 #content {
 /*pp    margin: 0 280px 0 20px;*/
+	margin:-20px auto 30px auto;
+	width:880px;
     -moz-border-radius: 10px 10px 10px 10px;
     background: none repeat scroll 0 0 #FFFFFF;
     border: 15px solid #041E2B;
     float: left;
     height: auto;
-    margin: 0 0 0 0;
-    padding: 33px 34px 0px 50px;
-    width: 833px;
+    padding: 33px 34px 25px 50px;
     -moz-border-radius: 10px; 
     -webkit-border-radius: 10px; 
     border-radius: 10px;
@@ -93,15 +94,28 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 #secondary {
 	float: right;
 	overflow: hidden;
-
+	width: 220px;
 }
 #secondary {
 	clear: right;
 }
-#footer {
+
+/*footer*/
+
+/*#footer {
+	position: relative;
 	clear: both;
 	width: 100%;
-}
+	margin: 0 0 -250px 0;
+}*/
+#push{height:300px; width: 100%; background: #fff;padding-bottom: 300px;}
+.clear{clear:both;}
+
+.foot_hilite{position:absolute; margin:-45px 0 0 70px; background: url(images/footer_hilite.png) no-repeat; height:209px; width:776px;}
+.foot{ position:relative; clear:both; min-width:1080px; height:250px; background:#041e2b; margin:-250px 0 0 0; }
+.foot_links{ width:900px; margin:0 auto; padding:20px;}
+.foot ul{float:left; width:150px; margin:0 0 0 135px;}
+.foot li{display:block; line-height:30px;}
 
 /*
 LAYOUT: One column, no sidebar
@@ -405,14 +419,26 @@ div.menu */ {
 #access .menu-header ul,
 div.menu ul {
 	list-style: none;
+	float:right;
 /*	margin: 0; Conflict with .menu position within header */ 
 }
 #access .menu-header li /*,
 div.menu li */ {
 	float: left;
 	position: relative;
+	 width:100px;
 }
-
+#access a {
+	color: #aaa;
+	display: block;
+	line-height: 38px;
+	padding: 0 10px;
+	text-decoration: none;
+	text-align:right;
+	margin:64px 35px 0; 
+	font-size:18px;
+	color:#006699;
+}
 #access ul ul {
 	box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
 	-moz-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
@@ -443,6 +469,7 @@ div.menu li */ {
 #access ul ul :hover > a {
 	/* background: #333; 
 	color: #fff; */
+	color:#229ddb;
 }
 #access ul li:hover > ul {
 	display: block;
@@ -451,7 +478,7 @@ div.menu li */ {
 #access ul li.current-menu-ancestor > a,
 #access ul li.current-menu-item > a,
 #access ul li.current-menu-parent > a {
-	/* color: #fff; */
+	color:#229ddb;
 }
 * html #access ul li.current_page_item a,
 * html #access ul li.current-menu-ancestor a,
@@ -468,11 +495,6 @@ div.menu li */ {
 #main {
 	margin: 0 auto 0 auto;
 	clear: both;
-	overflow: hidden;
-	padding: 0;
-}
-#content {
-	margin-bottom: 36px;
 }
 #content,
 #content input,
@@ -481,7 +503,14 @@ div.menu li */ {
 	font-size: 14px;
 	line-height: 22px;
 }
-
+#content p,
+#content ul,
+#content ol,
+#content dd,
+#content pre,
+#content hr {
+	margin-bottom: 24px;
+}
 #content ul ul,
 #content ol ol,
 #content ul ol,
@@ -508,7 +537,7 @@ div.menu li */ {
 #content h4,
 #content h5,
 #content h6 {
-
+	color: #666666;
 	margin: 5px 0 20px 0;
 }
 #content table {
@@ -576,7 +605,7 @@ div.menu li */ {
     font-family: 'NobileBold','Arial Black','Helvetica',sans-serif;
     font-size: 20px;
     letter-spacing: 1px;
-    margin: 0;
+    margin:0;
 }
 .entry-title a:link,
 .entry-title a:visited {
@@ -602,7 +631,7 @@ div.menu li */ {
 .entry-content,
 .entry-summary {
 	clear: both;
-	padding: 12px 0 0 0;
+	padding: 12px 75px 0 0px;
 }
 #content .entry-summary p:last-child {
 	margin-bottom: 12px;
@@ -1204,7 +1233,7 @@ h3#reply-title {
 /* Main sidebars */
 #main .widget-area ul {
 	margin-left: 0;
-	padding: 0;
+	padding: 0 20px 0 0;
 }
 #main .widget-area ul ul {
 	border: none;
@@ -1224,9 +1253,9 @@ h3#reply-title {
 /* =Footer
 -------------------------------------------------------------- */
 
-#footer {
+/*#footer {
 	margin-bottom: 20px;
-}
+}*/
 #colophon {
 	border-top: 4px solid #000;
 	margin-top: -4px;
@@ -1281,11 +1310,12 @@ code {
 	-webkit-text-size-adjust: none;
 }
 /******************* Ruth's Styles ******************/
+
 html{color:#041e2b; height:100%; } 
-body{ width:100%; height:auto;
+body{ width:100%; height:100%;
 background:url(images/gradientbg_lrg.png) repeat-x; background-color: #91b1c1;
   font:12px/20px 'NobileRegular',Arial, Helvetica, sans-serif; color:#666;}
-#wrap{ width:100%; height:auto; margin:0; padding:0;}
+#wrap{ width:100%; min-height:100%; height: 100%; margin:0; }
 /*header*/
 .head_bg{ height:109px; min-width:1080px; background:url(images/header_gr.png) repeat-x; margin:0 ; padding: 0;}
 .head{ height:109px; width:944px; padding:0; margin:0 auto; }
@@ -1295,19 +1325,16 @@ h2{ margin:0; font-size:20px; font-family:'NobileBold' ,'Arial Black', 'Helvetic
 .head a{ color:#888; text-decoration:none; padding:0 2px;}
 .head a:hover{ color:#229ddb;}
 /*main nav*/
-.menu{ width:400px;  float:right; margin:64px 35px 0; padding:0px 0 0px 0; color:#888; font-size:18px; text-align:right; font-family:'NobileRegular'; }
-.menu li {display: block; float: left; width:100px;}
-.menu li a, .menu li a:visited {text-decoration: none; padding:0 10px 0; color:#006699;}
-.menu li a:hover{color:#229ddb;}
+
 /*content*/
 .banner{height:60px; width:944px; padding:0; margin:-5px auto 20px auto; font-family:'NobileItalic', Arial, Helvetica, sans-serif; letter-spacing:2px; }
 .title_em{color:#006699; font-family:'NobileBold'; }
 .banner-text{width:100%;}
 .banner-text h1{ width:800px; padding:0; font-size:20px; letter-spacing:1px; color:#666; line-height:30px; float:right; margin:20px -60px 0 0; text-shadow:rgba(255,255,255,1) 1px 0, rgba(255,255,255,1) 0 1px, rgba(255,255,255,1) 0 1px, rgba(255,255,255,1) 1px -1px;}
-.content_container{min-width:1080px; width:100%; margin:0; padding:0;}
-.content_hilite{background: url(images/shadow_top.png) no-repeat;float: left; margin:-10px 0 0 40px; width:850px; height:19px;}
-.content{min-height:530px; width:913px; padding:0px 0 20px 0; margin:0px auto 25px auto; background:#fff; border:15px #041e2b solid; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
-.app{width:280px; height:530px; float:left; margin:20px 150px 0 10px; }
+
+.content_hilite{background: url(images/shadow_top.png) no-repeat;float: left; margin:-10px 0 0 75px; width:850px; height:19px;}
+
+.app{width:280px; height:530px; float:left; margin:-10px 150px 0 -5px; }
 .app_img{ width:120%; float:left; margin:10px 55px 0 55px;}
 .app a, .app a:visited {text-decoration:none; color:#666;}
 .app a:hover {text-decoration:none; color:#229ddb;}
@@ -1318,29 +1345,19 @@ h2{ margin:0; font-size:20px; font-family:'NobileBold' ,'Arial Black', 'Helvetic
 .app_title h2 a{ margin:18px 0 0 135px; float:left; font-size:24px; font-family:'NobileBold'; color:#006699; }
 .desc{ margin:0 83px; width:300px; font-size:12px; color:#666; float:left; padding:5px 0;}
 .content-bottom{ width:944px; height:5px;}
-/*footer*/
-#push{height:300px;}
-.clear{clear:both;}
-.foot_hilite{position:absolute; margin:-45px 0 0 70px; background: url(images/footer_hilite.png) no-repeat; height:209px; width:776px;}
-.foot{ position:relative; clear:both; min-width:1080px; height:250px; background:#041e2b; }
-.foot_links{ width:900px; margin:0 auto; padding:20px;}
-.foot ul{float:left; width:150px; margin:0 0 0 135px;}
-.foot li{display:block; line-height:30px;}
 
-/*------press---------*/
+
+/*------press and blog---------*/
 h4{ margin:0; padding:0; color:#fff; font-size:26px; float: left;}
 h5{ margin:10px 0 5px 0; padding:0 0 0 0; color:#006699; font-size:20px; font-weight:lighter; float: left; width: 100%; display: block;}
-.left{ width:463px; height:auto; padding:0 0 0 48px; margin:30px 0 0 0; color:#666; float:left; }
+.left{ width:463px; height:auto; padding:0 0 0 0; margin:0 0 0 20px; color:#666; float:left; }
+
 .left p{ margin:0; padding:10px 0 0 0; font-size:14px; line-height:20px;}
 .left a, .left a:visited { text-decoration:none; color:#006699;}
 .left a:hover { color:#229ddb;}
-.right{ background-color: #FAFAFA;
-box-shadow: 0 0 5px #888888 inset;
-color: #666666;
-float: right;
-padding: 0 20px 20px;
-position: relative;
-width: 243px; }
+/*sidebar*/
+.right{ position: absolute ; width:230px; margin:60px 0px 0 675px; padding:0 20px 20px 20px; color:#666; background-color:rgb(250,250,250); /*look up for opera*/
+-moz-box-shadow: inset 0 0 5px #888;-webkit-box-shadow: inset 0 0 5px #888; box-shadow: inner 0 0 5px #888; }
 .right p{ margin:0; padding:0; font-size:12px; line-height:20px; float: left;}
 .social, .press_kit {width:100%; margin:10px 10px 0px -5px;}
 .contact {width:100%; margin:15px 0 0 17px;}
@@ -1368,45 +1385,4 @@ h3{ margin:0; padding:0;font-size:18px;font-weight:lighter; }
 .mceTemp {
 width: 100%;
 clear: both;
-}
-
-
-/*---------about-----------*/
-
-ul#app_iphones {
-float: left;
-margin: 20px 0px 0 10px;
-width: auto;
-}
-
-ul#app_iphones li {
-	display: inline;
-	float: left;
-	margin: 10px 35px 0;
-}
-
-.app_desc {
-color: #666666;
-float: left;
-font-size: 12px;
-margin: 0;
-padding:0;
-width: 300px;
-}
-
-.app_desc h2 {
-line-height: 12px;
-}
-
-.app_desc ul li {
-	display:inline;
-} 
-
-ul#app_blocks {
-width: 100%;
-}
-
-ul#app_blocks li {
-	display: inline;
-	float: left;
 }
