@@ -1350,14 +1350,20 @@ h2{ margin:0; font-size:20px; font-family:'NobileBold' ,'Arial Black', 'Helvetic
 /*------press and blog---------*/
 h4{ margin:0; padding:0; color:#fff; font-size:26px; float: left;}
 h5{ margin:10px 0 5px 0; padding:0 0 0 0; color:#006699; font-size:20px; font-weight:lighter; float: left; width: 100%; display: block;}
-.left{ width:463px; height:auto; padding:0 0 0 0; margin:0 0 0 20px; color:#666; float:left; }
-
+/*.left{ width:540px; height:auto; padding:0 0 0 0; margin:0 0 0 20px; color:#666; float:left; }*/
+.left{ width:540px; height:auto; padding:0; margin:0; color:#666; float:left; }
 .left p{ margin:0; padding:10px 0 0 0; font-size:14px; line-height:20px;}
 .left a, .left a:visited { text-decoration:none; color:#006699;}
 .left a:hover { color:#229ddb;}
 /*sidebar*/
-.right{ position: absolute ; width:230px; margin:60px 0px 0 675px; padding:0 20px 20px 20px; color:#666; background-color:rgb(250,250,250); /*look up for opera*/
--moz-box-shadow: inset 0 0 5px #888;-webkit-box-shadow: inset 0 0 5px #888; box-shadow: inner 0 0 5px #888; }
+.right{ background-color: #FAFAFA;
+box-shadow: 0 0 5px #888888 inset;
+color: #666666;
+float: right;
+padding: 0 20px 20px;
+position: relative;
+width: 243px; }
+/*.right{ position: absolute ; width:230px; margin:60px 0px 0 675px; padding:0 20px 20px 20px; color:#666; background-color:rgb(250,250,250); -moz-box-shadow: inset 0 0 5px #888;-webkit-box-shadow: inset 0 0 5px #888; box-shadow: inner 0 0 5px #888; }*/
 .right p{ margin:0; padding:0; font-size:12px; line-height:20px; float: left;}
 .social, .press_kit {width:100%; margin:10px 10px 0px -5px;}
 .contact {width:100%; margin:15px 0 0 17px;}
