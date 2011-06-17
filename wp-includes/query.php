@@ -1510,7 +1510,7 @@ class WP_Query {
 			$this->parse_tax_query( $qv );
 
 			foreach ( $this->tax_query->queries as $tax_query ) {
-				if ( 'IN' == $tax_query['operator'] ) {
+				if ( 'NOT IN' != $tax_query['operator'] ) {
 					switch ( $tax_query['taxonomy'] ) {
 						case 'category':
 							$this->is_category = true;
@@ -2231,10 +2231,6 @@ class WP_Query {
 			}
 		}
 
-		if ( !empty( $this->tax_query->queries ) || !empty( $q['meta_key'] ) ) {
-			$groupby = "{$wpdb->posts}.ID";
-		}
-
 		// Author/user stuff
 
 		if ( empty($q['author']) || ($q['author'] == '0') ) {
@@ -2478,6 +2474,10 @@ class WP_Query {
 			$clauses = call_user_func_array( '_get_meta_sql', array( $q['meta_query'], 'post', $wpdb->posts, 'ID', &$this) );
 			$join .= $clauses['join'];
 			$where .= $clauses['where'];
+		}
+
+		if ( ! empty( $this->tax_query->queries ) || ! empty( $q['meta_query'] ) ) {
+			$groupby = "{$wpdb->posts}.ID";
 		}
 
 		// Apply filters on where and join prior to paging so that any
