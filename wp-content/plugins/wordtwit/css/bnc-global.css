@@ -1,0 +1,281 @@
+/* @override http://www.bravenewcode.com/wordpress/wp-content/plugins/wordtwit/css/bnc-global.css?ver=f1433df619140a99900e45d83cd32e70 */
+
+#bnc-global {
+	color: #444;
+	margin-bottom: 80px;
+	width: 97%;
+	clear: both;
+}
+
+#bnc-global .postbox {
+	padding: 10px;
+	position: relative;
+	overflow: hidden;
+	-webkit-box-shadow: #ccc 0px 1px 6px;
+}
+
+#bnc-global .postbox h3 {
+	margin: -10px -10px 0;
+	cursor: default;
+}
+
+#bnc-global a {
+	text-decoration: none;
+	font-size: 11px;
+}
+
+#bnc-global a.orange-link {
+	color: #d54e21;
+}
+
+#bnc-global a.orange-link:hover {
+	color: #3c627f;
+}
+
+#bnc-global a.wordtwit-fancylink {
+	color: red;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#bnc-global, #bnc-global .postbox, #bnc-global .postbox ul, #bnc-global .postbox p, #bnc-global p {
+	margin-top: 10px;
+	font-size: 11px;
+}
+
+#bnc-global .wordtwit-left-content {
+	width: 28%;
+	float: left;
+	padding-right: 10px;
+	margin-top: 10px;
+	position: relative;
+}
+
+#bnc-global .wordtwit-left-content h4 {
+	font-size: 14px;
+	color: #d54e21;
+	letter-spacing: -1px;
+	margin: 0 0 5px;
+	padding: 0;
+}
+
+#bnc-global .wordtwit-left-content p {
+	margin-top: 0;
+}
+
+#bnc-global .wordtwit-left-content ul {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+#bnc-global .wordtwit-left-content li {
+	color: #536e90;
+	margin: 0 5px;
+	padding: 1px 0;
+	list-style-type: circle;
+	list-style-position: inside;
+}
+
+#bnc-global .wordtwit-right-content {
+	width: 63%;
+	float: left;
+	margin-left: 3%;
+	border-left: 1px solid #e6e6e6;
+	margin-bottom: -10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-top: 15px;
+	min-height: 100px;
+}
+
+#bnc-global .wordtwit-right-content li {
+	list-style-type: none;
+}
+
+#bnc-global .bnc-clearer {
+	clear: both;
+}
+
+#bnc-global select {
+	vertical-align: baseline;
+	width: 176px;
+	margin-right: 5px;
+	border: 1px solid #6caccd;
+}
+
+#bnc-global input.checkbox {
+	margin-right: 5px;
+	vertical-align: middle;
+	width: auto;
+	border-style: none;
+}
+
+#bnc-global input {
+	border: 2px solid #a4c6d3;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	margin-right: 7px;
+	width: 177px;
+	color: #555;
+	font-size: 11px;
+	background-color: #ebf1ff;
+	margin-left: 5px;
+}
+
+#bnc-global ul.wordtwit-make-li-italic li {
+	font-style: italic;
+}
+
+#bnc-global #wptouchupdated {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	opacity: 0.9;
+	height: auto;
+	width: 100%;
+}
+
+#bnc-global #wptouchupdated p.saved {
+	color: #daeffe;
+	-webkit-border-radius: 22px;
+	-moz-border-radius: 22px;
+	text-align: center;
+	text-shadow: #000 -1px -1px 1px;
+	letter-spacing: -1px;
+	font: bold 22px "Myriad Pro", "Trebuchet MS", "Lucida Sans Unicode", sans-serif;
+	height: 155px;
+	background: #222 url(../images/saved.png) no-repeat center 10px;
+	width: 170px;
+	margin-top: 15%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 12px;
+	-webkit-box-shadow: #000 0px 0px 32px;
+
+}
+
+#bnc-global #wptouchupdated p.reset {
+	color: #dcdcdc;
+	-webkit-border-radius: 22px;
+	-moz-border-radius: 22px;
+	text-align: center;
+	text-shadow: #000 -1px -1px 1px;
+	letter-spacing: -1px;
+	font: bold 22px "Myriad Pro", "Trebuchet MS", "Lucida Sans Unicode", sans-serif;
+	height: 155px;
+	background: #222 url(../images/reset.png) no-repeat center 10px;
+	width: 170px;
+	margin-top: 15%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 12px;
+	-webkit-box-shadow: #000 0px 0px 32px;
+
+}
+
+#bnc-global #wptouchupdated p span {
+	display: block;
+	margin-top: 110px;
+}
+
+#bnc-global .check {
+	width: auto;
+}
+
+#bnc-global .long {
+	width: 300px;
+}
+
+/* @group Global H3 Icons */
+
+#bnc-global h3 span {
+	height: 16px;
+	margin-right: 5px;
+	width: 16px;
+	display: block;
+	float: left;
+	bottom: 2px;
+	position: relative;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+#bnc-global h3 span.rss-feed {
+	background: url(../images/h3_icons/rss.png);
+}
+
+#bnc-global h3 span.profile-settings {
+	background: url(../images/h3_icons/profile.png);
+}
+
+#bnc-global h3 span.url-settings {
+	background: url(../images/h3_icons/url.png);
+}
+
+#bnc-global h3 span.account-settings {
+	background: url(../images/h3_icons/account.png);
+}
+
+#bnc-global h3 span.tag-settings {
+	background: url(../images/h3_icons/tag.png);
+}
+
+#bnc-global h3 span.advanced-settings {
+	background: url(../images/h3_icons/advanced.png);
+}
+
+/* @end */
+
+/* @group Save/Restore Button Area */
+
+#bnc-global input#bnc-button {
+	color: #fff;
+}
+
+#bnc-global input#bnc-button, #bnc-global input#bnc-button-reset {
+	border: 2px solid #b2cfe4;
+	float: left;
+	width: 12%;
+	padding: 4px;
+}
+
+#bnc-global input#bnc-button-reset:hover {
+	border-color: red;
+	color: red;
+}
+
+#bnc-global input#bnc-button:hover {
+	border: 2px solid #305769;
+	color: #cdebfd;
+}
+
+/* @end */
+
+/* @group Fancybox */
+
+div#fancy_overlay{position:fixed;top:0;left:0;width:100%;height:100%;display:none;z-index:30;}div#fancy_loading{position:absolute;height:40px;width:40px;cursor:pointer;display:none;overflow:hidden;background:transparent;z-index:100;}div#fancy_loading div{position:absolute;top:0;left:0;width:40px;height:480px;background:transparent url('../images/fancybox/fancy_progress.png') no-repeat;}div#fancy_outer{position:absolute;top:0;left:0;z-index:90;padding:20px 20px 25px;margin:0;background:transparent;display:none;}div#fancy_inner{position:relative;width:100%;height:100%;background:#FFF;}div#fancy_content{z-index:100;position:absolute;margin-top:0;margin-right:0;margin-bottom:0;}div#fancy_div{background:#eee;color:#444;height: 100%;width: 100%;z-index:100;text-shadow:#fff 0 1px 0;position:relative;
+	margin: 0;
+	border: 1px solid #c0ccce;
+}
+
+div#fancy_div p {
+	padding: 5px;
+}
+
+div#fancy_div h2 {
+	background-color: #cee6ef;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+	margin: 0;
+	border-bottom: 1px solid #c5d2d8;
+	letter-spacing: -1px;
+}img#fancy_img{position:absolute;top:0;left:0;border:0;padding:0;margin:0;z-index:100;width:100%;height:100%;}div#fancy_close{position:absolute;top: -15px;height:30px;width:30px;background:url('../images/fancybox/fancy_closebox.png') top left no-repeat;cursor:pointer;z-index:181;display:none;left: -15px;}#fancy_frame{position:relative;width:100%;height:100%;display:none;}#fancy_ajax{width:100%;height:100%;overflow:auto;}a#fancy_left,a#fancy_right{position:absolute;bottom:0px;height:100%;width:35%;cursor:pointer;z-index:111;display:none;background-image:url("data:image/gif;base64,AAAA");outline:none;overflow:hidden;}a#fancy_left{left:0px;}a#fancy_right{right:0px;}span.fancy_ico{position:absolute;top:50%;margin-top:-15px;width:30px;height:30px;z-index:112;cursor:pointer;display:block;}span#fancy_left_ico{left:-9999px;background:transparent url('../images/fancybox/fancy_left.png') no-repeat;}span#fancy_right_ico{right:-9999px;background:transparent url('../images/fancybox/fancy_right.png') no-repeat;}a#fancy_left:hover,a#fancy_right:hover{visibility:visible;background-color:transparent;}a#fancy_left:hover span{left:20px;}a#fancy_right:hover span{right:20px;}#fancy_bigIframe{position:absolute;top:0;left:0;width:100%;height:100%;background:transparent;}div#fancy_bg{position:absolute;top:0;left:0;width:100%;height:100%;z-index:70;border:0;padding:0;margin-top:0;margin-right:0;margin-bottom:0;}div.fancy_bg{position:absolute;display:block;z-index:70;border:0;padding:0;margin:0;}div#fancy_bg_n{top:-20px;width:100%;height:20px;background:transparent url('../images/fancybox/fancy_shadow_n.png') repeat-x;}div#fancy_bg_ne{top:-20px;right:-20px;width:20px;height:20px;background:transparent url('../images/fancybox/fancy_shadow_ne.png') no-repeat;}div#fancy_bg_e{right:-20px;height:100%;width:20px;background:transparent url('../images/fancybox/fancy_shadow_e.png') repeat-y;}div#fancy_bg_se{bottom:-20px;right:-20px;width:20px;height:20px;background:transparent url('../images/fancybox/fancy_shadow_se.png') no-repeat;}div#fancy_bg_s{bottom:-20px;width:100%;height:20px;background:transparent url('../images/fancybox/fancy_shadow_s.png') repeat-x;}div#fancy_bg_sw{bottom:-20px;left:-20px;width:20px;height:20px;background:transparent url('../images/fancybox/fancy_shadow_sw.png') no-repeat left bottom;}div#fancy_bg_w{left:-20px;height:100%;width:20px;background:transparent url('../images/fancybox/fancy_shadow_w.png') repeat-y;}div#fancy_bg_nw{top:-20px;left:-20px;width:20px;height:20px;background:transparent url('../images/fancybox/fancy_shadow_nw.png') no-repeat;}
+
+
+
+/* @end */

@@ -16,13 +16,14 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
+define('WP_CACHE', true); //Added by WP-Cache Manager
 define('DB_NAME', 'wordpress');
 
 /** MySQL database username */
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'root');
+define('DB_PASSWORD', 'iRXFHpxPTeDXg');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');

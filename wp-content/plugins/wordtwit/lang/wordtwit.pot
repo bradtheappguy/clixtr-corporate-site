@@ -1,0 +1,387 @@
+# Translation of the WordPress plugin WordTwit 2.6 by Dale Mugford & Duane Storey (BraveNewCode).
+# Copyright (C) 2011 Dale Mugford & Duane Storey (BraveNewCode)
+# This file is distributed under the same license as the WordTwit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WordTwit 2.6\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/wordtwit\n"
+"POT-Creation-Date: 2011-03-25 10:59-0400\n"
+"PO-Revision-Date: 2011-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ajax/create-url.php:12
+msgid "Invalid URL."
+msgstr ""
+
+#: ajax/table.php:9
+msgid "Original URL"
+msgstr ""
+
+#: ajax/table.php:10
+msgid "Short URL"
+msgstr ""
+
+#: ajax/table.php:11
+msgid "Views"
+msgstr ""
+
+#. #-#-#-#-#  wordtwit.pot (WordTwit 2.6)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: html/options.php:8 wordtwit.php:386
+msgid "WordTwit"
+msgstr ""
+
+#: html/options.php:13
+#, php-format
+msgid "%sWordTwit Pro - Coming Soon!%s"
+msgstr ""
+
+#: html/options.php:14
+#, php-format
+msgid "%sBNC on Twitter%s"
+msgstr ""
+
+#: html/options.php:15
+#, php-format
+msgid "%sGet WPtouch Pro%s"
+msgstr ""
+
+#: html/options.php:23
+msgid "WordTwit Wire"
+msgstr ""
+
+#: html/options.php:46
+msgid "Twitter Profile"
+msgstr ""
+
+#: html/options.php:49
+msgid ""
+"Your WordTwit configuration is associated with the Twitter account shown "
+"here."
+msgstr ""
+
+#: html/options.php:60
+msgid "followers"
+msgstr ""
+
+#: html/options.php:61
+msgid "No Description On Account"
+msgstr ""
+
+#: html/options.php:65
+msgid ""
+"Sorry, the credentials you entered were rejected by Twitter.<br />Please try "
+"again."
+msgstr ""
+
+#: html/options.php:79
+msgid "URL Shortening"
+msgstr ""
+
+#: html/options.php:82
+#, php-format
+msgid ""
+"As of WordTwit 2.0, you can create custom unique short URLs for links.  "
+"These links will be prefixed with: <strong>%s</strong>"
+msgstr ""
+
+#: html/options.php:83
+msgid ""
+"To enable this behavior, select <strong><em>Local</em></strong> as your URL "
+"shortening method, save the setting, and new options will appear."
+msgstr ""
+
+#: html/options.php:86
+msgid "Link Statistics"
+msgstr ""
+
+#: html/options.php:87
+msgid "Most Popular Links"
+msgstr ""
+
+#: html/options.php:88
+msgid "Newest Links"
+msgstr ""
+
+#: html/options.php:102
+msgid "Post ID"
+msgstr ""
+
+#: html/options.php:104
+msgid "Local"
+msgstr ""
+
+#: html/options.php:106
+msgid "Shortening Method"
+msgstr ""
+
+#: html/options.php:114
+msgid "create"
+msgstr ""
+
+#: html/options.php:115
+msgid "Create a New URL"
+msgstr ""
+
+#: html/options.php:122
+msgid "Use Alternate Domain"
+msgstr ""
+
+#: html/options.php:126
+msgid "Enable banner on external sites"
+msgstr ""
+
+#: html/options.php:130
+msgid "Dynamically convert all local content links into short URLs"
+msgstr ""
+
+#: html/options.php:136
+msgid "Bit.ly User Name"
+msgstr ""
+
+#: html/options.php:140
+msgid "Bit.ly API key"
+msgstr ""
+
+#: html/options.php:145
+msgid "Remove www from links"
+msgstr ""
+
+#: html/options.php:159
+msgid "Account Login / Tweet Message"
+msgstr ""
+
+#: html/options.php:162
+msgid ""
+"WordTwit allows you to publish a tweet whenever a new entry is published. "
+msgstr ""
+
+#: html/options.php:163
+msgid ""
+"You can also customize the message WordTwit posts to your account by using "
+"the \"message\" field below.  You can use [title] to represent the title of "
+"your entry, and [link] to represent the URL."
+msgstr ""
+
+#: html/options.php:164
+#, php-format
+msgid ""
+"You can also define a %scustom application%s via Twitter and have WordTwit "
+"Tweet on your application's behalf.  Clear both of these fields to use the "
+"default OAuth configuration."
+msgstr ""
+
+#: html/options.php:175
+msgid "Unable to obtain authorization URL from Twitter. "
+msgstr ""
+
+#: html/options.php:176
+#, php-format
+msgid ""
+"Please make sure your server time is accurate or adjust the OAuth Time "
+"Offset below.  <br />If problem persists, visit the %ssupport forums%s and "
+"report your problem"
+msgstr ""
+
+#: html/options.php:187
+msgid "Your account has  been authorized."
+msgstr ""
+
+#: html/options.php:187
+msgid "Are you sure you want to deauthorize your Twitter account?"
+msgstr ""
+
+#: html/options.php:187
+msgid "Click to deauthorize"
+msgstr ""
+
+#: html/options.php:189
+#, php-format
+msgid "%d pending tweet(s)"
+msgstr ""
+
+#: html/options.php:198
+msgid "Message"
+msgstr ""
+
+#: html/options.php:206
+msgid "OAuth Consumer Key"
+msgstr ""
+
+#: html/options.php:210
+msgid "OAuth Consumer Secret"
+msgstr ""
+
+#: html/options.php:225
+msgid "Tag/Category Options"
+msgstr ""
+
+#: html/options.php:228
+msgid ""
+"The default behaviour of WordTwit is to publish all new posts as Tweets to "
+"your Twitter stream."
+msgstr ""
+
+#: html/options.php:229
+msgid ""
+"WordTwit can also be configured to include/exclude entries that have a "
+"specific tag or category. "
+msgstr ""
+
+#: html/options.php:236
+msgid "Associated Tags/Categories <small>(comma separated)</small>"
+msgstr ""
+
+#: html/options.php:240
+msgid "Reverse behaviour <small>(exclude tags/categories listed above)</small>"
+msgstr ""
+
+#: html/options.php:250
+msgid "Advanced Options"
+msgstr ""
+
+#: html/options.php:252
+msgid "You can configure advanced WordTwit settings in this area."
+msgstr ""
+
+#: html/options.php:253
+msgid ""
+"When UTM tags are enabled, utm_source will be set to wordtwit, and "
+"utm_medium will be set to social."
+msgstr ""
+
+#: html/options.php:259
+msgid ""
+"Enable Urchin Tracking Module (UTM) Tags <small>(for statistics tracking)</"
+"small>"
+msgstr ""
+
+#: html/options.php:263
+msgid "Enable Tweet Queue - Experimental <small>(for failed Tweets)</small>"
+msgstr ""
+
+#: html/options.php:267
+msgid "Allow Tweeting of Old Posts"
+msgstr ""
+
+#: html/options.php:272
+msgid "Disable CURL support"
+msgstr ""
+
+#: html/options.php:277
+msgid "Enable Debug Log"
+msgstr ""
+
+#: html/options.php:282
+#, php-format
+msgid "OAuth Time Offset (in seconds). %sEstimate offset%s."
+msgstr ""
+
+#: html/options.php:294
+msgid "Restore default WordTwit settings?"
+msgstr ""
+
+#: html/options.php:294
+msgid "Restore Defaults"
+msgstr ""
+
+#: html/post-box.php:9
+msgid "Chars Left:"
+msgstr ""
+
+#: html/post-box.php:13
+msgid "Status:"
+msgstr ""
+
+#: html/post-box.php:20
+msgid "Tweeted"
+msgstr ""
+
+#: html/post-box.php:24
+msgid "Pending"
+msgstr ""
+
+#: html/post-box.php:27
+msgid "Tweeted Previously"
+msgstr ""
+
+#: html/post-box.php:31
+msgid "Tweet Failed"
+msgstr ""
+
+#: html/post-box.php:45
+msgid "Not Tweeted"
+msgstr ""
+
+#: html/post-box.php:58
+msgid "Preview:"
+msgstr ""
+
+#: html/post-box.php:64
+#, php-format
+msgid "Views: %s"
+msgstr ""
+
+#: html/post-box.php:70
+msgid "Retry Tweet"
+msgstr ""
+
+#: html/twitter.php:2
+msgid "Recent Tweets"
+msgstr ""
+
+#: include/widgets.php:5
+msgid "WordTwit Twitter Feed"
+msgstr ""
+
+#: include/widgets.php:5
+msgid "Shows a list of recent Tweets."
+msgstr ""
+
+#: wordtwit.php:285
+msgid "Settings"
+msgstr ""
+
+#: wordtwit.php:400
+msgid "Just now"
+msgstr ""
+
+#: wordtwit.php:402
+#, php-format
+msgid "About %d minutes ago"
+msgstr ""
+
+#: wordtwit.php:404
+#, php-format
+msgid "About %d hours ago"
+msgstr ""
+
+#: wordtwit.php:406
+#, php-format
+msgid "About %d days ago"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.bravenewcode.com/wordtwit"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Posts updates to Twitter about entries automatically. Includes many "
+"configurable options, statistics and more."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Dale Mugford & Duane Storey (BraveNewCode)"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.bravenewcode.com"
+msgstr ""

@@ -133,9 +133,10 @@ DESCRIPTION: Full width content with no sidebar; used for attachment pages
 */
 
 .single-attachment #content {
-	margin: 0 auto 0 0;
-	width: 900px;
-    padding: 0 0 0 0;
+	float:right;
+	margin: 70px 35px 0 0;
+	width: 600px;
+        padding: 0 0 0 0;
 }
 
 
@@ -144,9 +145,9 @@ DESCRIPTION: Full width content with no sidebar; used for attachment pages
 body,
 input,
 textarea,
-.page-title span,
+.page-title span {font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;}
 .pingback a.url {
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 h3#comments-title,
 h3#reply-title,
@@ -674,8 +675,7 @@ div.menu li {
 }
 .page-title {
 	color: #000;
-	font-size: 26px;
-	font-weight: bold;
+	font-size: 22px;
 	margin: 0 0 36px 0;
 }
 .page-title span {
@@ -898,8 +898,9 @@ body.page .edit-link {
 -------------------------------------------------------------- */
 
 .attachment .entry-content .entry-caption {
-	font-size: 140%;
-	margin-top: 24px;
+	font-size: 100%;
+	margin-top: 10px;
+	width:80%;
 }
 .attachment .entry-content .nav-previous a:before {
 	content: '\2190\00a0';
@@ -964,7 +965,7 @@ img.aligncenter {
 .wp-caption {
 	background: #f1f1f1;
 	line-height: 18px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	max-width: 632px !important; /* prevent too-wide images from breaking layout */
 	padding: 4px;
 	text-align: center;
